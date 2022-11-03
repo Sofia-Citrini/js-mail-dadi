@@ -6,13 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <title>Dadi</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
 </head>
 
 <body>
-    <div>
-        <div id="giocatore"></div>
-        <div id="computer"></div>
+    <h1 class="text-center py-4">GIOCO DEI DADI</h1>
+
+    <div class="row justify-content-center text-center gap-3">
+        <div class="col-3 border p-3 text-success">
+            Giocatore:
+            <div id="giocatore"></div>
+        </div>
+        <div class="col-3 border p-3 text-primary">
+            Computer:
+            <div id="computer"></div> 
+        </div>
     </div>
+
+    <div class="text-center py-3">
+        <button id="genera" class="btn btn-warning">Genera</button>
+        <button id="refresh" class="btn btn-info">Refresh</button>
+    </div>
+    
+
+    <div class="risultato text-center py-5 text-uppercase fw-bolder fs-3"></div>
     
     <script src="js/dadi.js"></script>
 </body>
